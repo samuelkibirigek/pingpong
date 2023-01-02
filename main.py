@@ -14,8 +14,11 @@ screen.title("Ping Pong")
 screen.listen()
 screen.tracer(0)
 
-l_paddle = Paddle((-350, 0))
-r_paddle = Paddle((350, 0))
+l_paddle = Paddle()
+r_paddle = Paddle()
+
+l_paddle.position((-350, 0))
+r_paddle.position((350, 0))
 
 screen.onkey(l_paddle.go_up, "w")
 screen.onkey(l_paddle.go_down, "s")

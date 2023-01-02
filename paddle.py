@@ -2,8 +2,10 @@ from turtle import Turtle, Screen
 
 
 class Paddle(Turtle):
-    def __int__(self, position):
+    def __int__(self):
         super().__init__()
+
+    def position(self, position):
         self.penup()
         self.shape("square")
         self.color("white")
